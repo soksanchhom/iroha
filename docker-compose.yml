@@ -12,7 +12,7 @@ services:
       - "IROHA_POSTGRES_HOST=postgres_1"
     volumes:
       - blockstore_0:/tmp/block_store
-      - /Users/soksan/iroha/home-work/genesis-block/config0:/opt/iroha_data
+      - $PWD/config0:/opt/iroha_data
     depends_on:
       - postgres_1
     networks:
@@ -30,7 +30,7 @@ services:
       - "IROHA_POSTGRES_HOST=postgres_2"
     volumes:
       - blockstore_1:/tmp/block_store
-      - /Users/soksan/iroha/home-work/genesis-block/config1:/opt/iroha_data
+      - $PWD/config1:/opt/iroha_data
     depends_on:
       - postgres_2
     networks:
@@ -49,7 +49,7 @@ services:
       - "IROHA_POSTGRES_HOST=postgres_3"
     volumes:
       - blockstore_2:/tmp/block_store
-      - /Users/soksan/iroha/home-work/genesis-block/config2:/opt/iroha_data
+      - $PWD/config2:/opt/iroha_data
     depends_on:
       - postgres_2
     networks:
@@ -68,7 +68,7 @@ services:
       - "IROHA_POSTGRES_HOST=postgres_4"
     volumes:
       - blockstore_3:/tmp/block_store
-      - /Users/soksan/iroha/home-work/genesis-block/config3:/opt/iroha_data
+      - $PWD/config3:/opt/iroha_data
     depends_on:
       - postgres_4
     networks:
