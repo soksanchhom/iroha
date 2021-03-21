@@ -11,7 +11,7 @@ services:
       - "KEY=node0"
       - "IROHA_POSTGRES_HOST=postgres_1"
     volumes:
-      - blockstore_0:/tmp/block_store
+      - $PWD/blockstore0:/tmp/block_store
       - $PWD/config0:/opt/iroha_data
     depends_on:
       - postgres_1
@@ -29,7 +29,7 @@ services:
       - "KEY=node1"
       - "IROHA_POSTGRES_HOST=postgres_2"
     volumes:
-      - blockstore_1:/tmp/block_store
+      - $PWD/blockstore1:/tmp/block_store
       - $PWD/config1:/opt/iroha_data
     depends_on:
       - postgres_2
@@ -48,7 +48,7 @@ services:
       - "KEY=node2"
       - "IROHA_POSTGRES_HOST=postgres_3"
     volumes:
-      - blockstore_2:/tmp/block_store
+      - $PWD/blockstore2:/tmp/block_store
       - $PWD/config2:/opt/iroha_data
     depends_on:
       - postgres_2
@@ -67,7 +67,7 @@ services:
       - "KEY=node3"
       - "IROHA_POSTGRES_HOST=postgres_4"
     volumes:
-      - blockstore_3:/tmp/block_store
+      - $PWD/blockstore3:/tmp/block_store
       - $PWD/config3:/opt/iroha_data
     depends_on:
       - postgres_4
@@ -120,11 +120,11 @@ services:
       - iroha-network
     restart: always
 
-volumes:
-  blockstore_0:
-  blockstore_1:
-  blockstore_2:
-  blockstore_3:
+# volumes:
+#   blockstore_0:
+#   blockstore_1:
+#   blockstore_2:
+#   blockstore_3:
 
 networks:
   iroha-network:
