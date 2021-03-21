@@ -134,6 +134,20 @@
                              "accountId":"root@sorakh",
                              "roleName":"money_creator"
                           }
+                       },
+                       {
+                          "createAccount":{
+                             "accountName":"bob",
+                             "domainId":"sorakh",
+                             "publicKey":"21da13be970828a1c5108efe4908f22aa40521eea46660867efee641ae99b703"
+                          }
+                       },
+                       {
+                          "createAccount":{
+                             "accountName":"alice",
+                             "domainId":"sorakh",
+                             "publicKey":"0693931f0f5b736a9f8fccfa9be256ee08d861cd30fd4ba32e35498401ea82a1"
+                          }
                        }
                     ],
                     "quorum":1
