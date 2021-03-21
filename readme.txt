@@ -14,7 +14,8 @@ configuration #2:
       - create root user (with root@sorakh.pub key)
       - append admin and money_creator role to root user( user role is already appended by default domain role)
       
-  - create docker file with postgres, network and volume
+  - create docker file with postgres
+  - mount volume with any host machine folder to store block
 
 
 
