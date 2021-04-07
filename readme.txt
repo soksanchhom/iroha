@@ -1,5 +1,5 @@
 
-#step to set up
+# step to set up node
 
 prequisition #1:
   - Prepare 4 config folder with files (config.docker, genesis.block, node(n).priv, node(n).pub, root@sorakh.priv, root@sorakh.pub)
@@ -19,8 +19,18 @@ configuration #2:
 
 
 
-#Deployment 
+# Deployment 
 
 ```docker-compose up -d```
+
+# Set up Iroha module step
+  Note: you must have python 3 install your machine
+  - set up Iroha module
+```pip3 install -r requirement.txt --user```
+
+# How to run python
+```python3 app.py```
+
+
 
 
